@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050a14">
+<title>INTEL CENTER</title>
+<style>
+:root{--bg:#050a14;--panel:#081526;--line:#123b58;--cyan:#48dcff;--blue:#1688ff;--muted:#6d91a9;--green:#62ffc0;--amber:#ffc76b}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:#d7f5ff;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+body{background:radial-gradient(ellipse at 50% 0%,#0a2540 0%,#050a14 60%);padding:14px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);padding:12px 15px;background:#06111fe8;box-shadow:0 0 24px #008cff12}
+.brand{font-size:clamp(16px,3vw,26px);letter-spacing:.16em;font-weight:800;color:#e8fbff}.brand span{color:var(--cyan)}.sub{font-size:10px;color:var(--muted);letter-spacing:.18em;margin-top:5px}.live{font-size:10px;color:var(--green);white-space:nowrap}.dot{display:inline-block;width:7px;height:7px;background:var(--green);border-radius:50%;margin-right:6px;box-shadow:0 0 9px var(--green)}
+.grid{display:grid;grid-template-columns:1.1fr 1.8fr 1.1fr;gap:12px;margin-top:12px}.panel{border:1px solid var(--line);background:linear-gradient(145deg,#0a1b2d,#06101d);min-width:0;position:relative;overflow:hidden}.panel h2{font-size:11px;letter-spacing:.17em;color:var(--cyan);font-weight:600;border-bottom:1px solid var(--line);padding:11px 12px;margin:0}.pad{padding:13px}.clock{font-size:clamp(25px,4vw,44px);letter-spacing:.04em;color:#e8fbff;text-shadow:0 0 15px #20baff44}.date{font-size:11px;color:var(--muted);margin-top:6px}.statrow{display:flex;justify-content:space-between;gap:10px;font-size:11px;padding:9px 0;border-bottom:1px solid #10283a}.ok{color:var(--green)}.cyan{color:var(--cyan)}.amber{color:var(--amber)}.mapwrap{padding:8px}.map{width:100%;height:auto;display:block;background:radial-gradient(ellipse,#0a2b43,#06111e 72%);border:1px solid #102e45}.map text{font-family:inherit;fill:#57c8ed;font-size:9px;letter-spacing:1px}.radarbox{display:flex;align-items:center;justify-content:center;padding:14px}.radar{width:min(100%,260px);aspect-ratio:1;border-radius:50%;position:relative;border:1px solid #1e779b;background:repeating-radial-gradient(circle,transparent 0 20%,#124a65 20.5% 21%,transparent 21.5% 40%),linear-gradient(90deg,transparent 49.7%,#1b526b 50%,transparent 50.3%),linear-gradient(transparent 49.7%,#1b526b 50%,transparent 50.3%),radial-gradient(circle,#0b2b3c,#06111c 75%);overflow:hidden;box-shadow:0 0 25px #00c8ff16}.sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0deg,transparent 285deg,#48dcff05 315deg,#48dcff66 360deg);animation:spin 5s linear infinite}.sweep:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.8%,#48dcff66 50%,transparent 50.5%)}@keyframes spin{to{transform:rotate(360deg)}}.blip{position:absolute;width:6px;height:6px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}.b1{top:30%;left:62%}.b2{top:65%;left:35%;background:var(--amber);box-shadow:0 0 12px var(--amber)}.b3{top:45%;left:75%}.radarlabel{text-align:center;font-size:9px;color:var(--muted);margin-top:12px;letter-spacing:.13em}.case{padding:10px 0;border-bottom:1px solid #10283a}.case strong{display:block;font-size:11px;color:#dff8ff}.case small{display:block;color:var(--muted);font-size:9px;line-height:1.7;margin-top:5px}.pill{display:inline-block;font-size:9px;padding:3px 6px;border:1px solid #215a73;color:var(--cyan);margin-top:5px}.bottom{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;margin-top:12px}.feed{font-size:10px;line-height:1.9;color:#91b5ca}.feed div{border-bottom:1px solid #10283a;padding:5px 0}.feed time{color:var(--cyan);margin-right:10px}.foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#41667e;font-size:9px;letter-spacing:.12em;padding:14px 2px 4px}.bar{height:4px;background:#10283a;margin-top:6px}.bar span{display:block;height:100%;width:82%;background:linear-gradient(90deg,#1688ff,#48dcff)}button{background:#081a2a;color:var(--cyan);border:1px solid #1b5877;padding:8px 10px;font:inherit;font-size:10px;cursor:pointer}button:active{background:#12334b}.toolbar{display:flex;gap:7px;align-items:center}
+@media(max-width:850px){body{padding:8px}.grid{grid-template-columns:1fr 1.25fr}.grid .side-right{grid-column:1/-1}.bottom{grid-template-columns:1fr}.brand{letter-spacing:.1em}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.grid .side-right{grid-column:auto}.clock{font-size:38px}.radar{width:220px}.sub{letter-spacing:.1em}}
+</style>
+</head>
+<body>
+<header>
+  <div><div class="brand"><span>◈</span> INTEL CENTER</div><div class="sub">TACTICAL MONITORING INTERFACE // SIMULATION</div></div>
+  <div style="text-align:right"><div class="live"><i class="dot"></i>SYSTEM ONLINE</div><div class="sub">NODE IC-07 · BUILD 2.6</div></div>
+</header>
+<main class="grid">
+  <section class="panel">
+    <h2>LOCAL TIME / UTC+2</h2><div class="pad"><div id="clock" class="clock">--:--:--</div><div id="date" class="date">Loading local time…</div>
+    <div style="margin-top:20px" class="statrow"><span>NETWORK</span><span class="ok">CONNECTED</span></div>
+    <div class="statrow"><span>ENCRYPTION</span><span class="cyan">AES-256*</span></div>
+    <div class="statrow"><span>THREAT LEVEL</span><span class="ok">LOW</span></div>
+    <div class="statrow"><span>UPLINK</span><span class="ok">STABLE</span></div>
+    <div style="margin-top:15px;font-size:10px;color:var(--muted)">CPU LOAD <span style="float:right" class="cyan">18%</span><div class="bar"><span style="width:18%"></span></div></div>
+    <div style="margin-top:12px;font-size:10px;color:var(--muted)">SIGNAL INTEGRITY <span style="float:right" class="cyan">82%</span><div class="bar"><span></span></div></div>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>GLOBAL OVERVIEW / WORLD GRID</h2>
+    <div class="mapwrap">
+      <svg class="map" viewBox="0 0 700 330" role="img" aria-label="Stylized fictional world map">
+        <defs><pattern id="grid" width="35" height="27.5" patternUnits="userSpaceOnUse"><path d="M35 0H0V27.5" fill="none" stroke="#123b58" stroke-width=".6"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <rect width="700" height="330" fill="url(#grid)"/>
+        <g fill="#0e4762" stroke="#2a9dc4" stroke-width="1.2" opacity=".9">
+          <path d="M54 70L91 45 137 51 161 72 151 94 124 101 112 128 91 137 76 119 58 108Z"/>
+          <path d="M135 144L161 151 179 182 168 219 153 255 139 234 132 199 118 174Z"/>
+          <path d="M253 64L280 48 306 55 321 74 309 92 283 88 267 104 248 89Z"/>
+          <path d="M292 102L329 98 348 120 339 157 319 190 303 174 294 141 278 121Z"/>
+          <path d="M339 63L387 43 448 49 470 68 516 69 554 94 542 116 510 121 494 143 466 132 447 111 415 115 398 94 369 99 354 82Z"/>
+          <path d="M371 132L405 124 429 147 419 184 394 215 376 191 365 159Z"/>
+          <path d="M497 183L532 170 563 187 572 210 552 229 523 217 503 203Z"/>
+          <path d="M584 244L605 238 622 250 613 264 592 261Z"/>
+        </g>
+        <g fill="#48dcff" filter="url(#glow)"><circle cx="126" cy="89" r="3"/><circle cx="317" cy="132" r="3"/><circle cx="415" cy="92" r="3"/><circle cx="526" cy="104" r="3"/><circle cx="396" cy="160" r="3"/><circle cx="548" cy="202" r="3"/></g>
+        <g stroke="#48dcff" stroke-width=".8" opacity=".55" fill="none"><path d="M126 89Q260 15 415 92T526 104"/><path d="M317 132Q365 70 415 92T548 202"/><path d="M126 89Q260 230 396 160"/></g>
+        <g><text x="20" y="20">GLOBAL GRID // SIMULATED</text><text x="20" y="315">LAT 00°00' · LON 00°00'</text><text x="520" y="315">6 NODES ACTIVE</text></g>
+      </svg>
+    </div>
+    <div class="pad" style="padding-top:0"><div class="statrow"><span>TRACKED NODES</span><span class="cyan">06</span></div><div class="statrow"><span>MAP DATA</span><span class="amber">ILLUSTRATIVE</span></div></div>
+  </section>
+  <section class="panel side-right">
+    <h2>RADAR / SECTOR 07</h2>
+    <div class="radarbox"><div class="radar"><div class="sweep"></div><i class="blip b1"></i><i class="blip b2"></i><i class="blip b3"></i></div></div>
+    <div class="radarlabel">SWEEP ACTIVE · SIMULATED CONTACTS</div>
+    <div class="pad"><div class="statrow"><span>CONTACTS</span><span class="cyan">03</span></div><div class="statrow"><span>RANGE</span><span>120 NM*</span></div><div class="statrow"><span>MODE</span><span class="ok">PASSIVE</span></div></div>
+  </section>
+</main>
+<section class="bottom">
+  <div class="panel"><h2>CASE FILES / TRAINING SCENARIOS</h2><div class="pad">
+    <div class="case"><strong>CASE-041 // OPERATION NIGHTFALL</strong><small>STATUS: ARCHIVED · PRIORITY: ROUTINE<br>Training scenario. All names, locations and details are fictional.</small><span class="pill">CLOSED</span></div>
+    <div class="case"><strong>CASE-082 // SIGNAL ECHO</strong><small>STATUS: UNDER REVIEW · PRIORITY: LOW<br>Fictional signal-analysis exercise; no live intelligence feed.</small><span class="pill">SIMULATION</span></div>
+    <div class="case"><strong>CASE-116 // BLUE HORIZON</strong><small>STATUS: READY · PRIORITY: ROUTINE<br>Scenario brief available for interface demonstration.</small><span class="pill">READY</span></div>
+  </div></div>
+  <div class="panel"><h2>SYSTEM EVENT LOG</h2><div class="pad feed" id="feed">
+    <div><time>14:02:11</time>UI INITIALIZED</div><div><time>14:02:12</time>RADAR SIMULATION ACTIVE</div><div><time>14:02:13</time>WORLD GRID RENDERED</div><div><time>14:02:14</time>NO LIVE DATA SOURCES CONNECTED</div>
+    <div class="toolbar" style="margin-top:12px"><button onclick="addEvent()">+ NEW TEST EVENT</button><button onclick="toggleScan(this)">PAUSE SWEEP</button></div>
+  </div></div>
+</section>
+<div class="foot"><span>INTEL CENTER // PERSONAL UI</span><span>FICTIONAL DISPLAY · NOT AN OFFICIAL GOVERNMENT SYSTEM</span><span id="status">ALL MODULES NOMINAL</span></div>
+<script>
+const clock=document.getElementById('clock'),date=document.getElementById('date');
+function tick(){const d=new Date();clock.textContent=d.toLocaleTimeString('en-GB',{hour12:false});date.textContent=d.toLocaleDateString('en-GB',{weekday:'long',day:'2-digit',month:'short',year:'numeric'}).toUpperCase();}
+tick();setInterval(tick,1000);
+function addEvent(){const feed=document.getElementById('feed'),d=new Date(),row=document.createElement('div'),t=document.createElement('time');t.textContent=d.toLocaleTimeString('en-GB',{hour12:false});row.append(t,document.createTextNode('TEST EVENT // USER TRIGGERED'));feed.insertBefore(row,feed.querySelector('.toolbar'));}
+let scanning=true;function toggleScan(btn){scanning=!scanning;document.querySelector('.sweep').style.animationPlayState=scanning?'running':'paused';btn.textContent=scanning?'PAUSE SWEEP':'RESUME SWEEP';document.getElementById('status').textContent=scanning?'ALL MODULES NOMINAL':'RADAR SWEEP PAUSED';}
+</script>
+</body></html>
